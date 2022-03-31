@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     juice = {
-      version = "~> 0.2"
+      version = "~> 0.3"
       source = "terraform.in.pan-net.eu/juice/juice"
     }
     random = {
@@ -87,4 +87,18 @@ resource "juice_quota" "quota" {
 resource "juice_extnet_rbac" "pi-net" {
   juice_project_id = juice_project.project.id
   network = "external_pi-net_provider"
+}
+
+resource "juice_flavor" "test-flavor" {
+  juice_project_id = juice_project.project.id
+  name  = "tf-juice-test-flavor1"
+  vcpus = 1
+  ram   = 1024
+  disk  = 20
+  extra_specs = {
+    "aggregate_instance_extra_specs:compute_role": "shared",
+    "aggregate_instance_extra_specs:consumer": "all",
+    # "aggregate_instance_extra_specs:hw_family": "Be",
+    "aggregate_instance_extra_specs:cpu_vendor": "intel",
+  }
 }

@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     juice = {
-      version = "~> 0.3"
+      version = "~> 0.1"
       source = "terraform.in.pan-net.eu/juice/juice"
     }
     random = {
@@ -101,4 +101,14 @@ resource "juice_flavor" "test-flavor" {
     # "aggregate_instance_extra_specs:hw_family": "Be",
     "aggregate_instance_extra_specs:cpu_vendor": "intel",
   }
+}
+
+# Create provider VLAN network
+resource "juice_network" "net1" {
+  juice_project_id = juice_project.project.id
+  name = "tf-juice-test-net1"
+  description = "TF juice test VLAN net"
+  physical_network = "physnet1"
+  segmentation_id = 1372
+  # mtu = 8000
 }

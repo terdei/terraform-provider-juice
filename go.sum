@@ -264,8 +264,8 @@ gitlab.tools.in.pan-net.eu/juice/juice-clients/juice-go.git/networks v0.2.0 h1:Q
 gitlab.tools.in.pan-net.eu/juice/juice-clients/juice-go.git/networks v0.2.0/go.mod h1:+Oe/atV52FYZQ666vz4LsT+vCSfvxjGFwANHR8XgZj0=
 gitlab.tools.in.pan-net.eu/juice/juice-clients/juice-go.git/users v0.2.0 h1:GvMG9dsEJJoghOomAU5rMrOntgaOM5ZhbROnJsY/ydo=
 gitlab.tools.in.pan-net.eu/juice/juice-clients/juice-go.git/users v0.2.0/go.mod h1:6vL2eIoPjZ5COPVyGhFryoGBQN4GJCrjxhcWh3GcAF0=
-gitlab.tools.in.pan-net.eu/juice/terraform-provider-juice.git v0.4.0 h1:kNv3EZuE9RI71/xGK5p5a+v9MPW1iVpjq3uJkFsBrBQ=
-gitlab.tools.in.pan-net.eu/juice/terraform-provider-juice.git v0.4.0/go.mod h1:gnpWxEa75UDasEg8At0dPP+l9WFlsJdN0XCk2n9DAXw=
+gitlab.tools.in.pan-net.eu/juice/terraform-provider-juice.git v0.4.1 h1:nZD1CdgF0UNecRzBLLraIjlufUXUtrjppkHKQt4hJ7o=
+gitlab.tools.in.pan-net.eu/juice/terraform-provider-juice.git v0.4.1/go.mod h1:gnpWxEa75UDasEg8At0dPP+l9WFlsJdN0XCk2n9DAXw=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
 go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=
 go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=

@@ -17,7 +17,7 @@ description: |-
 
 ### Optional
 
-- **j_auth_url** (String)
-- **j_group** (String)
-- **j_password** (String, Sensitive)
-- **j_username** (String)
+- `j_auth_url` (String)
+- `j_group` (String)
+- `j_password` (String, Sensitive)
+- `j_username` (String)

@@ -17,15 +17,12 @@ description: |-
 
 ### Required
 
-- **juice_project_id** (String)
-- **network** (String)
-
-### Optional
-
-- **id** (String) The ID of this resource.
+- `juice_project_id` (String)
+- `network` (String)
 
 ### Read-Only
 
-- **network_id** (String)
+- `id` (String) The ID of this resource.
+- `network_id` (String)
 
 

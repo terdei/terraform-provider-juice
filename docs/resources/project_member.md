@@ -17,12 +17,15 @@ description: |-
 
 ### Required
 
-- **juice_project_id** (String)
-- **username** (String)
+- `juice_project_id` (String)
+- `username` (String)
 
 ### Optional
 
-- **id** (String) The ID of this resource.
-- **user_domain** (String)
+- `user_domain` (String)
+
+### Read-Only
+
+- `id` (String) The ID of this resource.
 
 

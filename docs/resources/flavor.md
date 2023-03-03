@@ -17,22 +17,22 @@ description: |-
 
 ### Required
 
-- **disk** (Number)
-- **juice_project_id** (String)
-- **name** (String)
-- **ram** (Number)
-- **vcpus** (Number)
+- `disk` (Number)
+- `juice_project_id` (String)
+- `name` (String)
+- `ram` (Number)
+- `vcpus` (Number)
 
 ### Optional
 
-- **ephemeral** (Number)
-- **extra_specs** (Map of String)
-- **id** (String) The ID of this resource.
-- **rx_tx_factor** (Number)
-- **swap** (Number)
+- `ephemeral` (Number)
+- `extra_specs` (Map of String)
+- `rx_tx_factor` (Number)
+- `swap` (Number)
 
 ### Read-Only
 
-- **uuid** (String)
+- `id` (String) The ID of this resource.
+- `uuid` (String)
 
 

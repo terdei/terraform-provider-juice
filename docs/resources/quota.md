@@ -17,33 +17,36 @@ description: |-
 
 ### Required
 
-- **juice_project_id** (String)
+- `juice_project_id` (String)
 
 ### Optional
 
-- **backup_gigabytes** (Number)
-- **backups** (Number)
-- **cores** (Number)
-- **fixed_ips** (Number)
-- **floatingips** (Number)
-- **gigabytes** (Number)
-- **id** (String) The ID of this resource.
-- **injected_file_size** (Number)
-- **injected_files** (Number)
-- **injected_path_size** (Number)
-- **instances** (Number)
-- **key_pairs** (Number)
-- **networks** (Number)
-- **per_volume_gigabytes** (Number)
-- **ports** (Number)
-- **ram** (Number)
-- **routers** (Number)
-- **security_group_rules** (Number)
-- **security_groups** (Number)
-- **server_group_members** (Number)
-- **server_groups** (Number)
-- **snapshots** (Number)
-- **subnets** (Number)
-- **volumes** (Number)
+- `backup_gigabytes` (Number)
+- `backups` (Number)
+- `cores` (Number)
+- `fixed_ips` (Number)
+- `floatingips` (Number)
+- `gigabytes` (Number)
+- `injected_file_size` (Number)
+- `injected_files` (Number)
+- `injected_path_size` (Number)
+- `instances` (Number)
+- `key_pairs` (Number)
+- `networks` (Number)
+- `per_volume_gigabytes` (Number)
+- `ports` (Number)
+- `ram` (Number)
+- `routers` (Number)
+- `security_group_rules` (Number)
+- `security_groups` (Number)
+- `server_group_members` (Number)
+- `server_groups` (Number)
+- `snapshots` (Number)
+- `subnets` (Number)
+- `volumes` (Number)
+
+### Read-Only
+
+- `id` (String) The ID of this resource.
 
 

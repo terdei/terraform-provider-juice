@@ -17,17 +17,17 @@ description: |-
 
 ### Required
 
-- **name** (String)
+- `name` (String)
 
 ### Optional
 
-- **cloud** (String)
-- **description** (String)
-- **id** (String) The ID of this resource.
+- `cloud` (String)
+- `description` (String)
 
 ### Read-Only
 
-- **domain** (String)
-- **uuid** (String)
+- `domain` (String)
+- `id` (String) The ID of this resource.
+- `uuid` (String)
 
 

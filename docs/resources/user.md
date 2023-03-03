@@ -17,14 +17,17 @@ description: |-
 
 ### Required
 
-- **password** (String)
-- **username** (String)
+- `password` (String)
+- `username` (String)
 
 ### Optional
 
-- **cloud** (String)
-- **description** (String)
-- **email** (String)
-- **id** (String) The ID of this resource.
+- `cloud` (String)
+- `description` (String)
+- `email` (String)
+
+### Read-Only
+
+- `id` (String) The ID of this resource.
 
 

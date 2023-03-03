@@ -17,21 +17,21 @@ description: |-
 
 ### Required
 
-- **description** (String)
-- **juice_project_id** (String)
-- **name** (String)
-- **physical_network** (String)
-- **segmentation_id** (Number)
+- `description` (String)
+- `juice_project_id` (String)
+- `name` (String)
 
 ### Optional
 
-- **id** (String) The ID of this resource.
-- **mtu** (Number)
-- **network_type** (String)
-- **port_security_enabled** (Boolean)
+- `mtu` (Number)
+- `network_type` (String)
+- `physical_network` (String)
+- `port_security_enabled` (Boolean)
+- `segmentation_id` (Number)
 
 ### Read-Only
 
-- **uuid** (String)
+- `id` (String) The ID of this resource.
+- `uuid` (String)
 
 

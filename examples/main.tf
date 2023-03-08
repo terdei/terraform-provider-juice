@@ -109,6 +109,31 @@ resource "juice_network" "net1" {
   name = "tf-juice-test-net1"
   description = "TF juice test VLAN net"
   physical_network = "physnet1"
-  segmentation_id = 1372
+  segmentation_id = 1039
   # mtu = 8000
+}
+
+resource "juice_network" "net2" {
+  juice_project_id = juice_project.project.id
+  name = "tf-juice-test-net2"
+  description = "TF juice test Geneve net"
+  network_type = "geneve"
+  # mtu = 8000
+}
+
+# Create subnet
+resource "juice_subnet" "subnet1" {
+  juice_network_id = juice_network.net1.id
+  name = "tf-juice-test-net1.subnet0"
+  description = "TF juice test subnet"
+  cidr = "192.168.1.0/24"
+  dns_nameservers = [ "192.168.1.1", "192.168.1.2" ]
+  allocation_pool {
+    start = "192.168.1.5"
+    end   = "192.168.1.100"
+  }
+  host_route {
+    destination = "10.235.0.0/16"
+    nexthop = "192.168.1.1"
+  }
 }

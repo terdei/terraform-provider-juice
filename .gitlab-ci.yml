@@ -1,27 +1,30 @@
-image:
-  name: artifactory.tools.in.pan-net.eu/docker.io/goreleaser/goreleaser
-  entrypoint: ['']
-
 variables:
   GOPATH: $CI_PROJECT_DIR/build
   GOCACHE: $CI_PROJECT_DIR/build/cache
 
-cache:
-  paths:
-    - build/
-
-before_script:
-  - mkdir -p $CI_PROJECT_DIR/build/pkg $CI_PROJECT_DIR/build/cache $CI_PROJECT_DIR/build/bin
-  - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.tools.in.pan-net.eu/".insteadOf https://gitlab.tools.in.pan-net.eu/
-  - go env -w GOPRIVATE=gitlab.tools.in.pan-net.eu
+.default:
+  image:
+    name: artifactory.devops.telekom.de/hub.docker.com/goreleaser/goreleaser:v2.1.0
+    entrypoint: ['']
+  tags:
+    - otc_run_docker_k8s_s
+  before_script:
+    - mkdir -p $CI_PROJECT_DIR/build/pkg $CI_PROJECT_DIR/build/cache $CI_PROJECT_DIR/build/bin
+    - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.devops.telekom.de/".insteadOf https://gitlab.devops.telekom.de/
+    - go env -w GOPRIVATE=gitlab.devops.telekom.de
+  cache:
+    key: build-cache
+    paths:
+      - build/
+  rules:
+    - if: $CI_COMMIT_TAG
 
 stages:
   - release
 
 release:
   stage: release
-  only:
-    - tags
+  extends: .default
   variables:
     # Disable shallow cloning so that goreleaser can diff between tags to
     # generate a changelog.

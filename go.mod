@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.34.0
-	gitlab.devops.telekom.de/juice/terraform-provider-juice.git v0.5.5
+	gitlab.devops.telekom.de/juice/terraform-provider-juice.git v0.5.6
 )
 
 require (
